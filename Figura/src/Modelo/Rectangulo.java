@@ -1,53 +1,31 @@
+package Modelo;
+
 
 import java.util.*;
 
-/**
- * 
- */
 public class Rectangulo {
 
-    /**
-     * Default constructor
-     */
-    public Rectangulo() {
-    }
-
-    /**
-     * 
-     */
+    
     private int base;
-
-    /**
-     * 
-     */
     private int  altura;
 
-    /**
-     * 
-     */
-    public void Attribute1;
-
-    /**
-     * @param Base 
-     * @param altura
-     */
-    public void Rectangulo(int Base, int altura) {
-        // TODO implement here
+    public  Rectangulo() {
+    	this.base = 1;
+        this.altura = 1;
+     
     }
-
-    /**
-     * 
-     */
-    public void Rectangulo() {
-        // TODO implement here
+    public Rectangulo(int base, int altura) {
+    	this.base=base;
+    	this.altura=altura;
     }
+   
 
     /**
      * Modifica base de la personas
      * @param base
      */
     public void Setbase(int base) {
-        // TODO implement here
+       this.base= base;
     }
 
     /**
@@ -55,16 +33,16 @@ public class Rectangulo {
      * @return
      */
     public int GetBase() {
-        // TODO implement here
-        return 0;
+       
+        return this.base;
     }
 
     /**
      * Modifica Altura de la personas
      * @param Altura
      */
-    public void SetAltura(int Altura) {
-        // TODO implement here
+    public void SetAltura(int altura) {
+        this.altura=altura;
     }
 
     /**
@@ -73,16 +51,13 @@ public class Rectangulo {
      */
     public int GetAltura() {
         // TODO implement here
-        return 0;
+        return this.altura;
     }
 
-    /**
-     * base * altura
-     * @return
-     */
+    
     public int  getarea() {
         // TODO implement here
-        return null;
+        return base * altura;
     }
 
     /**
@@ -90,8 +65,8 @@ public class Rectangulo {
      * @return
      */
     public int getperimetro() {
-        // TODO implement here
-        return 0;
+        
+        return 2*base + 2*altura;
     }
 
 }
